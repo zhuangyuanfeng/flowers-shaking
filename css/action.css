@@ -1,0 +1,163 @@
+#hole{
+    position: relative;
+    height: 800px;
+    width: 500px;
+    left: 250px;
+    top: 300px;
+    border: 1px solid #e1e1e1;
+}
+#hua-h{
+    height: 366px;
+    width: 304px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    z-index: 10;
+    animation:first 5s infinite;
+    -webkit-animation:first 5s infinite;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    /*transition-timing-function: ease-out;*/
+    /*-webkit-transition-timing-function: ease-out;*/
+}
+#hua{
+    position: absolute;
+    z-index: 10;
+}
+#hongbao{
+    position: absolute;
+    left: 120px;
+    top: 140px;
+    z-index: 20;
+    animation:second 5s infinite;
+    -webkit-animation:second 5s infinite;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+}
+#pen{
+    position: absolute;
+    top: 440px;
+    left: 100px;
+    z-index: 5;
+}
+/*红包与花一起晃动的动作*/
+@keyframes first
+{
+    10%   {
+        transform:rotate(3deg);
+        -moz-transform:rotate(3deg); /* Firefox 4 */
+        -webkit-transform:rotate(3deg); /* Safari and Chrome */
+        -o-transform:rotate(3deg);
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    20%  {
+        transform:rotate(-2deg);
+        -moz-transform:rotate(-2deg); /* Firefox 4 */
+        -webkit-transform:rotate(-2deg); /* Safari and Chrome */
+        -o-transform:rotate(-2deg);
+        transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        -webkit-transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+    33%  {
+        transform:rotate(1deg);
+        -moz-transform:rotate(1deg); /* Firefox 4 */
+        -webkit-transform:rotate(1deg); /* Safari and Chrome */
+        -o-transform:rotate(1deg);
+        transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        -webkit-transition-timing-function:cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    42%  {
+        transform:rotate(-1deg);
+        -moz-transform:rotate(-1deg); /* Firefox 4 */
+        -webkit-transform:rotate(-1deg); /* Safari and Chrome */
+        -o-transform:rotate(-1deg);
+        transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+    }
+    57%{
+        transform:rotate(1deg);
+        -moz-transform:rotate(1deg); /* Firefox 4 */
+        -webkit-transform:rotate(1deg); /* Safari and Chrome */
+        -o-transform:rotate(1deg);
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    67%{
+        transform:rotate(-0.5deg);
+        -moz-transform:rotate(-0.5deg); /* Firefox 4 */
+        -webkit-transform:rotate(-0.5deg); /* Safari and Chrome */
+        -o-transform:rotate(-0.5deg);
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    100%  {
+        transform:rotate(0deg);
+        -moz-transform:rotate(0deg); /* Firefox 4 */
+        -webkit-transform:rotate(0deg); /* Safari and Chrome */
+        -o-transform:rotate(0deg);
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+}
+
+/*红包反方向的动作*/
+@keyframes second
+{
+    10%   {
+        transform:rotate(6deg);
+        -moz-transform:rotate(6deg); /* Firefox 4 */
+        -webkit-transform:rotate(6deg); /* Safari and Chrome */
+        -o-transform:rotate(6deg);
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    20%  {
+        transform:rotate(-5deg);
+        -moz-transform:rotate(5deg); /* Firefox 4 */
+        -webkit-transform:rotate(-5deg); /* Safari and Chrome */
+        -o-transform:rotate(-5deg);
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    33%  {
+        transform:rotate(3deg);
+        -moz-transform:rotate(3deg); /* Firefox 4 */
+        -webkit-transform:rotate(3deg); /* Safari and Chrome */
+        -o-transform:rotate(3deg);
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    42%  {
+        transform:rotate(-3deg);
+        -moz-transform:rotate(-3deg); /* Firefox 4 */
+        -webkit-transform:rotate(-3deg); /* Safari and Chrome */
+        -o-transform:rotate(-3deg);
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    57%{
+        transform:rotate(2deg);
+        -moz-transform:rotate(2deg); /* Firefox 4 */
+        -webkit-transform:rotate(2deg); /* Safari and Chrome */
+        -o-transform:rotate(2deg);
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+    67%{
+        transform:rotate(-1deg);
+        -moz-transform:rotate(-1deg); /* Firefox 4 */
+        -webkit-transform:rotate(-1deg); /* Safari and Chrome */
+        -o-transform:rotate(-1deg);
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    100%  {
+        transform:rotate(0deg);
+        -moz-transform:rotate(0deg); /* Firefox 4 */
+        -webkit-transform:rotate(0deg); /* Safari and Chrome */
+        -o-transform:rotate(0deg);
+        transition-timing-function: cubic-bezier(0, 0, 1, 1);
+        -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+}
